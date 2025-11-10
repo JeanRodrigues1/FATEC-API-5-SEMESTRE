@@ -13,7 +13,7 @@ jobs:
       - name: Executar analise PRs
         uses: AlexSim93/pull-request-analytics-action@v4
         with:
-          GITHUB_TOKEN: ${{ ? }}
+          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_OWNER_FOR_ISSUE: ''
           GITHUB_REPO_FOR_ISSUE: ''
           GITHUB_OWNERS_REPO: ''
