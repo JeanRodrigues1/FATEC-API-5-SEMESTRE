@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened, synchronize]
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: '15 0 * * 1'
 
 jobs:
   stats:
