@@ -2,7 +2,7 @@ name: "QA CR PR Metrics"
 
 on:
   schedule:
-    - cron: '0 9 * * 1' # toda segunda-feira às 9hrs
+    - cron: '50 22 * * 0' # toda segunda-feira às 9hrs
   workflow_dispatch:
 
 jobs:
