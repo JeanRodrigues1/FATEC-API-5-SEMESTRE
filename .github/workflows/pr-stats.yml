@@ -1,4 +1,4 @@
-name: "PR Review Statss"
+name: PR Review Stats
 
 on:
   pull_request:
