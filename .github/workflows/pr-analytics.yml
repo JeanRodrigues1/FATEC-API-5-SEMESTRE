@@ -1,4 +1,4 @@
-name: "QA CR PR Metrics"
+name: QA CR PR Metrics
 
 on:
   schedule:
@@ -7,20 +7,20 @@ on:
 
 jobs:
   generate-metrics:
-    name: "Gerar Métricas QA"
+    name: Gerar Metricas QA
     runs-on: ubuntu-latest
     steps:
-      - name: "Executar análise PRs"
+      - name: Executar analise PRs
         uses: AlexSim93/pull-request-analytics-action@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_OWNER_FOR_ISSUE: ""
-          GITHUB_REPO_FOR_ISSUE: ""
-          GITHUB_OWNERS_REPO: ""
-          REPORT_PERIOD: "weeks:1"
-          CORE_HOURS_START: "9:00"
-          CORE_HOURS_END: "18:00"
-          TIMEZONE: "America/Sao_Paulo"
-          SHOW_STATS_TYPES: "timeline,workload,code-review-engagement,response-time"
+          GITHUB_OWNER_FOR_ISSUE: ''
+          GITHUB_REPO_FOR_ISSUE: ''
+          GITHUB_OWNERS_REPO: ''
+          REPORT_PERIOD: weeks:1
+          CORE_HOURS_START: '9:00'
+          CORE_HOURS_END: '18:00'
+          TIMEZONE: America/Sao_Paulo
+          SHOW_STATS_TYPES: timeline,workload,code-review-engagement,response-time
           REQUIRED_APPROVALS: 1
-          EXECUTION_OUTCOME: "new-issue,markdown,collection"
+          EXECUTION_OUTCOME: new-issue,markdown,collection
