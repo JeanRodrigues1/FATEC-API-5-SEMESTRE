@@ -13,7 +13,7 @@ jobs:
       - name: Executar analise PRs
         uses: AlexSim93/pull-request-analytics-action@v4
         with:
-          GITHUB_TOKEN: ''
+          GITHUB_TOKEN: ${{ github.token }}
           GITHUB_OWNER_FOR_ISSUE: 'JeanRodrigues1'
           GITHUB_REPO_FOR_ISSUE: 'FATEC-API-5-SEMESTRE'
           GITHUB_OWNERS_REPO: 'JeanRodrigues1/FATEC-API-5-SEMESTRE'
