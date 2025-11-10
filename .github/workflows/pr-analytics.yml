@@ -1,4 +1,4 @@
-name: "QA CR Metrics"
+name: "QA CR PR Metrics"
 
 on:
   schedule:
