@@ -6,3 +6,4 @@ class CoreConfig(AppConfig):
     name = "jiboia.core"
 
     #subindo teste la pra testar
+    #mais algumas adicções
